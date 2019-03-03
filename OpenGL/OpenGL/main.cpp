@@ -1,6 +1,7 @@
 #include "Dependencies\glew\glew.h"
 #include "Dependencies\freeglut\freeglut.h"
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -234,91 +235,59 @@ void HyperMidPoint(void)
 {
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glClearColor(1.0, 0.0, 0.0, 1.0);
-
-	float x, y;
-	float xc, yc;
-	float d, fx, fy, b, a;
-
-	xc = 5;
-	yc = 5;
-	a = 3;
-	b = 1;
-
-	d = b * b*(a + 0.5)*(a + 0.5) - a * a - a * a*b*b;
-
-	x = a;
-	
-	y = 0;
-
-	fx = 2 * b*b*a;
-	fy = 0;
-
 	glBegin(GL_POINTS);
 	glColor3f(0.0f, 1.0f, 1.0f);
 
-	while (abs(fy) <= fx)
+	int xc = 600, yc = 600;
+	long rx = 6;
+	long ry = 8;
+	int bound = 100;
+
+	long x, y, d, mida, midb;
+	long tworx2, twory2, rx2, ry2;
+	long x_slop, y_slop;
+	x = rx; y = 0;
+	rx2 = rx * rx;
+	ry2 = ry * ry;
+	tworx2 = 2 * rx2; twory2 = 2 * ry2;
+	x_slop = 2 * twory2 * (x + 1);
+	y_slop = 2 * tworx2;
+	mida = x_slop / 2; midb = y_slop / 2;
+	d = tworx2 - ry2 * (1 + 2 * rx) + midb;
+	while ((d < x_slop) && (y <= bound))
 	{
+		glVertex2f(x, y);
 		if (d >= 0)
 		{
-			d = d - a * a*(2 * y + 3);
-		}
-		else
-		{
-			d = d - a * a*(2 * y + 3) + b * b*(2 * x + 2);
+			d -= x_slop;
 			x++;
-			fx = fx + 2 * b*b;
+			x_slop += 2 * tworx2;
 		}
-
+		d += tworx2 + y_slop;
 		y++;
-		fy = fy + 2 * a*a;
-		glVertex3f(x + 320 + xc, 240 - y - yc, 0.0);
-
-		glVertex3f(x + 320 + xc, 240 + y - yc, 0.0);
-
-		glVertex3f(-x + 320 + xc, 240 - y - yc, 0.0);
-
-		glVertex3f(-x + 320 + xc, 240 + y - yc, 0.0);
-
+		y_slop += 2 * tworx2;
 	}
-
-	x = p / 2;
-
-	y = p;
-
-	d = -p;
-
-	while (y < 3 * p)
-
+	d -= (x_slop + y_slop) / 2 + (rx2 + ry2) - midb - mida;
+	if (rx > ry)
 	{
-
-		x++;
-
-		if (d >= 0)
-
+		while (y <= bound)
 		{
-
-			d = d - 2 * p;
-
+			glVertex4f(xc, yc, x, y);
+			if (d <= 0)
+			{
+				d += y_slop;
+				y++;
+				y += 2 * tworx2;
+			}
+			d -= twory2 - x_slop;
+			x++;
+			x_slop += 2 * twory2;
 		}
-
-		else
-
-		{
-
-			d = d + 2 * y + 2 - 2 * p;
-
-			y++;
-
-		}
-
-		glVertex3f(x + 320 + xc, 240 - y - yc, 0.0);
-
-		glVertex3f(x + 320 + xc, 240 + y - yc, 0.0);
-
 	}
 	glEnd();
 	glutSwapBuffers();
 }
+
 
 void Init()
 {
