@@ -1,25 +1,34 @@
-﻿  main.cpp
-e:\code\opengl\opengl\main.cpp(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-e:\code\opengl\opengl\main.cpp(28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-e:\code\opengl\opengl\main.cpp(53): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(79): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(83): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(84): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(85): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(109): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(110): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(111): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(112): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(118): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(119): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(120): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(121): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(136): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-e:\code\opengl\opengl\main.cpp(139): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-e:\code\opengl\opengl\main.cpp(146): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(179): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-e:\code\opengl\opengl\main.cpp(226): warning C4305: '+=': truncation from 'double' to 'float'
-e:\code\opengl\opengl\main.cpp(259): warning C4244: 'argument': conversion from 'long' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(275): warning C4244: 'argument': conversion from 'long' to 'GLfloat', possible loss of data
-e:\code\opengl\opengl\main.cpp(275): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
-  OpenGL.vcxproj -> E:\Code\OpenGL\Debug\OpenGL.exe
+﻿  Circle.cpp
+  Ellipse.cpp
+  Hyperbola.cpp
+  Line.cpp
+  Object.cpp
+  ObjectList.cpp
+  Parabola.cpp
+  point.cpp
+  main.cpp
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(27): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(28): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(53): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(79): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(83): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(84): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(85): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(109): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(110): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(111): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(112): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(118): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(119): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(120): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(121): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(136): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(139): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(146): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(179): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(226): warning C4305: '+=': truncation from 'double' to 'float'
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(259): warning C4244: 'argument': conversion from 'long' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(275): warning C4244: 'argument': conversion from 'long' to 'GLfloat', possible loss of data
+c:\users\asus\desktop\lab_01_cs411\opengl\opengl\main.cpp(275): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  Generating Code...
+  OpenGL.vcxproj -> C:\Users\ASUS\Desktop\Lab_01_CS411\OpenGL\Debug\OpenGL.exe

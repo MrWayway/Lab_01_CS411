@@ -119,7 +119,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\try\try\Circle.cpp" />
+    <ClCompile Include="..\..\..\try\try\Ellipse.cpp" />
+    <ClCompile Include="..\..\..\try\try\Hyperbola.cpp" />
+    <ClCompile Include="..\..\..\try\try\Line.cpp" />
+    <ClCompile Include="..\..\..\try\try\Object.cpp" />
+    <ClCompile Include="..\..\..\try\try\ObjectList.cpp" />
+    <ClCompile Include="..\..\..\try\try\Parabola.cpp" />
+    <ClCompile Include="..\..\..\try\try\point.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\try\try\Circle.h" />
+    <ClInclude Include="..\..\..\try\try\Ellipse.h" />
+    <ClInclude Include="..\..\..\try\try\Hyperbola.h" />
+    <ClInclude Include="..\..\..\try\try\Line.h" />
+    <ClInclude Include="..\..\..\try\try\Object.h" />
+    <ClInclude Include="..\..\..\try\try\ObjectList.h" />
+    <ClInclude Include="..\..\..\try\try\Parabola.h" />
+    <ClInclude Include="..\..\..\try\try\point.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\try\try\TextFile1.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
